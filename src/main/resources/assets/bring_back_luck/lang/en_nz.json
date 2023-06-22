@@ -1,0 +1,15 @@
+{
+  "item.bring_back_luck.lucky_clover": "Lucky Clover",
+  "item.minecraft.potion.effect.unlucky_potion": "Potion of Bad Luck",
+  "item.minecraft.splash_potion.effect.unlucky_potion": "Splash Potion of Bad Luck",
+  "item.minecraft.lingering_potion.effect.unlucky_potion": "Lingering Potion of Bad Luck",
+  "item.minecraft.tipped_arrow.effect.unlucky_potion": "Arrow of Bad Luck",
+  "item.minecraft.potion.effect.long_luck_potion": "Potion of Luck",
+  "item.minecraft.potion.effect.luck_2": "Potion of Luck II",
+  "item.minecraft.splash_potion.effect.long_luck_potion": "Splash Potion of Luck",
+  "item.minecraft.lingering_potion.effect.long_luck_potion": "Lingering Potion of Luck",
+  "item.minecraft.tipped_arrow.effect.long_luck_potion": "Arrow of Luck",
+  "item.minecraft.splash_potion.effect.luck_2": "Splash Potion of Luck II",
+  "item.minecraft.lingering_potion.effect.luck_2": "Lingering Potion of Luck II",
+  "item.minecraft.tipped_arrow.effect.luck_2": "Arrow of Luck II"
+}

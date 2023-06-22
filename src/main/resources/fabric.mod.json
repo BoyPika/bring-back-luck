@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "bring_back_luck",
+  "version": "0.0.4",
+
+  "name": "Bring Back Luck",
+  "description": "This is a mod that adds a way to make luck and unluck potions!",
+  "authors": [
+    "BoyPika"
+  ],
+
+  "license": "GPLv3",
+  "icon": "assets/bring_back_luck/textures/item/parent_icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.boypika.bring_back_luck.Bring_Back_Luck"
+    ]
+  },
+  "mixins": [
+    "bring_back_luck.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": ">=0.68.1+1.19.3",
+    "minecraft": ">=1.19.3"
+  }
+}

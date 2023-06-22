@@ -1,0 +1,15 @@
+{
+  "item.bring_back_luck.lucky_clover": "Glücksklee",
+  "item.minecraft.potion.effect.unlucky_potion": "Trank des Pechs",
+  "item.minecraft.splash_potion.effect.unlucky_potion": "Wurftrank des Pechs",
+  "item.minecraft.lingering_potion.effect.unlucky_potion": "Verweiltrank des Pechs",
+  "item.minecraft.tipped_arrow.effect.unlucky_potion": "Pfeil des Pechs",
+  "item.minecraft.potion.effect.long_luck_potion": "Trank des Glücks",
+  "item.minecraft.potion.effect.luck_2": "Trank des Glücks II",
+  "item.minecraft.splash_potion.effect.long_luck_potion": "Wurftrank des Glücks",
+  "item.minecraft.lingering_potion.effect.long_luck_potion": "Verweiltrank des Glücks",
+  "item.minecraft.tipped_arrow.effect.long_luck_potion": "Pfeil des Glücks",
+  "item.minecraft.splash_potion.effect.luck_2": "Wurftrank des Glücks II",
+  "item.minecraft.lingering_potion.effect.luck_2": "Verweiltrank des Glücks II",
+  "item.minecraft.tipped_arrow.effect.luck_2": "Pfeil des Glücks II"
+}
