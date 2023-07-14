@@ -1,15 +1,10 @@
-# Automatically build the project and run any configured tests for every push
-# and submitted pull request. This can help catch issues that only occur on
-# certain platforms or Java versions, and provides a first line of defence
-# against bad commits.
-
 name: build
 on: [ workflow_dispatch ]
 
 env:
-  JAVA_VERSION: 8
+  JAVA_VERSION: 17
   VERSION: 0.0.5
-  RELEASE_NAME: [1.16.2 - 1.19.2] Bring Back Luck 0.0.5
+  RELEASE_NAME: Bring Back Luck 0.0.5
   GITHUB_TOKEN: ${{ secrets.PUBLISH_GITHUB_TOKEN }}
   MODRINTH_TOKEN: ${{ secrets.PUBLISH_MODRINTH_TOKEN }}
   CURSEFORGE_TOKEN: ${{ secrets.PUBLISH_CURSEFORGE_TOKEN }}
@@ -33,7 +28,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: "temurin"
-          java-version: 8
+          java-version: 17
 
       - name: Make Gradle Wrapper Executable
         if: ${{ runner.os != 'Windows' }}
@@ -61,9 +56,8 @@ jobs:
             build/libs/!(*-@(dev|sources|javadoc)).jar
           loaders: |
             fabric
+            quilt
           game-versions: |
-            >=1.16.2
-            >=1.17
-            >=1.18
-            <=1.19
+            >=1.19.3
+            >=1.20
           java: "${{env.JAVA_VERSION}}"
