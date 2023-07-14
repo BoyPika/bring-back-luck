@@ -51,18 +51,17 @@ jobs:
           modrinth-id: efmfvTv6
           modrinth-token: "${{env.MODRINTH_TOKEN}}"
           modrinth-featured: true
-          curseforge-id: 684955
-          curseforge-token: "${{env.CURSEFORGE_TOKEN}}"
+
 
           name: "${{env.RELEASE_NAME}}"
           version: "${{env.VERSION}}"
           version-type: release
           files: |
-            build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(dev|sources|javadoc).jar
           loaders: |
             fabric
             quilt
           game-versions: |
             >=1.19.3
+            >=1.20
           java: "${{env.JAVA_VERSION}}"
