@@ -18,7 +18,7 @@ public class ModItems {
     }
 
     private static Item registerItem(Item item) {
-        return Registry.register(Registries.ITEM, new Identifier("bring_back_luck", "lucky_clover"), item);
+        return Registry.register(Registries.ITEM, new Identifier(Bring_Back_Luck.MOD_ID, "lucky_clover"), item);
     }
     public static void addItemsToItemGroup(){
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
