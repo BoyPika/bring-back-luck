@@ -7,13 +7,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Bring_Back_Luck implements ModInitializer {
-	public static final String MOD_ID = "bring_back_luck";
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static final Logger LOGGER = LoggerFactory.getLogger("bring_back_luck");
 
     @Override
     public void onInitialize() {
         ModItems.registerModItems();
-        ModPotions.registerPotions();
+        ModPotions.registerPotionRecipes();
         ModItems.addItemsToItemGroup();
 
     }
