@@ -2,26 +2,20 @@ package net.boypika.bring_back_luck.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.boypika.bring_back_luck.Bring_Back_Luck;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.registry.Registries;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.registry.Registry;
+import net.minecraft.util.registry.Registry;
 
 
 public class ModItems {
-    public static final Item LUCKY_CLOVER = registerItem(
-            new Item(new FabricItemSettings()));
+    public static final Item LUCKY_CLOVER = registerItem("lucky_clover",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
     public static void registerModItems() {
-        Bring_Back_Luck.LOGGER.info("[1.19.3 - 1.20.1] Bring Back Luck Init");
+        Bring_Back_Luck.LOGGER.info("[1.16.2 - 1.19.2] Bring Back Luck Init");
     }
 
-    private static Item registerItem(Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(Bring_Back_Luck.MOD_ID, "lucky_clover"), item);
-    }
-    public static void addItemsToItemGroup(){
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
-                .register(content -> content.add(ModItems.LUCKY_CLOVER));
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registry.ITEM, new Identifier(Bring_Back_Luck.MOD_ID, name), item);
     }
 }

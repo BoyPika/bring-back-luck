@@ -1,0 +1,69 @@
+# Automatically build the project and run any configured tests for every push
+# and submitted pull request. This can help catch issues that only occur on
+# certain platforms or Java versions, and provides a first line of defence
+# against bad commits.
+
+name: build
+on: [ workflow_dispatch ]
+
+env:
+  JAVA_VERSION: 8
+  VERSION: 0.0.5
+  RELEASE_NAME: [1.16.2 - 1.19.2] Bring Back Luck 0.0.5
+  GITHUB_TOKEN: ${{ secrets.PUBLISH_GITHUB_TOKEN }}
+  MODRINTH_TOKEN: ${{ secrets.PUBLISH_MODRINTH_TOKEN }}
+  CURSEFORGE_TOKEN: ${{ secrets.PUBLISH_CURSEFORGE_TOKEN }}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Environment Variables
+        run: env
+
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: "temurin"
+          java-version: 8
+
+      - name: Make Gradle Wrapper Executable
+        if: ${{ runner.os != 'Windows' }}
+        run: chmod +x ./gradlew
+
+      - name: Build
+        run: ./gradlew clean build
+
+      - name: Publish (CurseForge/Modrinth/GitHub)
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+
+          github-tag: "v${{env.VERSION}}"
+          github-token: "${{env.GITHUB_TOKEN}}"
+          modrinth-id: efmfvTv6
+          modrinth-token: "${{env.MODRINTH_TOKEN}}"
+          modrinth-featured: true
+          curseforge-id: 684955
+          curseforge-token: "${{env.CURSEFORGE_TOKEN}}"
+
+          name: "${{env.RELEASE_NAME}}"
+          version: "${{env.VERSION}}"
+          version-type: release
+          files: |
+            build/libs/!(*-@(dev|sources|javadoc)).jar
+          loaders: |
+            fabric
+          game-versions: |
+            >=1.16.2
+            >=1.17
+            >=1.18
+            <=1.19
+          java: "${{env.JAVA_VERSION}}"
