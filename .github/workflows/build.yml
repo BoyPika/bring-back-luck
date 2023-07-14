@@ -54,7 +54,7 @@ jobs:
           version: "${{env.VERSION}}"
           version-type: release
           files: |
-            build/libs/*-@(dev|sources|javadoc).jar
+            build/libs/!(*-@(dev|sources|javadoc)).jar
           loaders: |
             fabric
             quilt
