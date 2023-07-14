@@ -48,9 +48,6 @@ jobs:
 
           github-tag: "v${{env.VERSION}}"
           github-token: "${{env.GITHUB_TOKEN}}"
-          modrinth-id: efmfvTv6
-          modrinth-token: "${{env.MODRINTH_TOKEN}}"
-          modrinth-featured: true
 
 
           name: "${{env.RELEASE_NAME}}"
