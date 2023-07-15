@@ -4,7 +4,7 @@ on: [ workflow_dispatch ]
 env:
   JAVA_VERSION: 17
   VERSION: 0.0.5
-  RELEASE_NAME: "[1.16.2 - 1.19.2] Bring Back Luck 0.0.5"
+  RELEASE_NAME: "Bring Back Luck 0.0.5"
   CURSEFORGE_RELEASE_NAME: "[1.16.2 - 1.19.2] Bring Back Luck 0.0.5"
   GITHUB_TOKEN: ${{ secrets.PUBLISH_GITHUB_TOKEN }}
   MODRINTH_TOKEN: ${{ secrets.PUBLISH_MODRINTH_TOKEN }}
