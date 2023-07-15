@@ -1,6 +1,5 @@
 package net.boypika.bring_back_luck.potion;
 
-import net.boypika.bring_back_luck.Bring_Back_Luck;
 import net.boypika.bring_back_luck.mixin.BrewingRecipeRegistryMixin;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.Items;
@@ -23,7 +22,7 @@ public class ModPotions {
 
     }
     public static Potion registerPotion(String name, Potion potion) {
-        return Registry.register(Registry.POTION, new Identifier(Bring_Back_Luck.MOD_ID, name),
+        return Registry.register(Registry.POTION, new Identifier("bring_back_luck", name),
                 potion);
     }
 

@@ -16,6 +16,6 @@ public class ModItems {
     }
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registry.ITEM, new Identifier(Bring_Back_Luck.MOD_ID, name), item);
+        return Registry.register(Registry.ITEM, new Identifier("bring_back_luck", name), item);
     }
 }

@@ -7,8 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Bring_Back_Luck implements ModInitializer {
-	public static final String MOD_ID = "bring_back_luck";
-	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
+	public static final Logger LOGGER = LogManager.getLogger("bring_back_luck");
 
     @Override
     public void onInitialize() {
