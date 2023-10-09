@@ -1,0 +1,15 @@
+{
+  "item.bring_back_luck.lucky_clover": "Trèfle Porte-Bonheur",
+  "item.minecraft.potion.effect.unlucky_potion": "Potion de Malchance",
+  "item.minecraft.splash_potion.effect.unlucky_potion": "Potion de Malchance Jetable",
+  "item.minecraft.lingering_potion.effect.unlucky_potion": "Potion de Malchance Persistante",
+  "item.minecraft.tipped_arrow.effect.unlucky_potion": "Flèche de Malchance",
+  "item.minecraft.potion.effect.long_luck_potion": "Potion de Chance",
+  "item.minecraft.potion.effect.luck_2": "Potion de Chance II",
+  "item.minecraft.splash_potion.effect.long_luck_potion": "Potion de Chance Jetable",
+  "item.minecraft.lingering_potion.effect.long_luck_potion": "Potion de Chance Persistante",
+  "item.minecraft.tipped_arrow.effect.long_luck_potion": "Flèche de Chance",
+  "item.minecraft.splash_potion.effect.luck_2": "Potion de Chance II Jetable",
+  "item.minecraft.lingering_potion.effect.luck_2": "Potion de Chance II Persistante",
+  "item.minecraft.tipped_arrow.effect.luck_2": "Flèche de Chance II"
+}
