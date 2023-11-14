@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "bring_back_luck:item/lucky_clover"
+  }
+}

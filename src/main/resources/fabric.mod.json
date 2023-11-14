@@ -16,6 +16,9 @@
   "entrypoints": {
     "main": [
       "net.boypika.bring_back_luck.Bring_Back_Luck"
+    ],
+    "client": [
+      "net.boypika.bring_back_luck.Bring_Back_Luck_Client"
     ]
   },
   "mixins": [
