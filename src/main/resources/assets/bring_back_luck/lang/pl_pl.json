@@ -1,0 +1,15 @@
+{
+  "item.bring_back_luck.lucky_clover": "Szczęśliwa Koniczyna",
+  "item.minecraft.potion.effect.unlucky_potion": "Mikstura pecha",
+  "item.minecraft.splash_potion.effect.unlucky_potion": "Miotana mikstura pecha",
+  "item.minecraft.lingering_potion.effect.unlucky_potion": "Trwała mikstura pecha",
+  "item.minecraft.tipped_arrow.effect.unlucky_potion": "Strzała pecha",
+  "item.minecraft.potion.effect.long_luck_potion": "Mikstura szczęścia",
+  "item.minecraft.potion.effect.luck_2": "Mikstura szczęścia II",
+  "item.minecraft.splash_potion.effect.long_luck_potion": "Miotana mikstura szczęścia",
+  "item.minecraft.lingering_potion.effect.long_luck_potion": "Trwała mikstura szczęścia",
+  "item.minecraft.tipped_arrow.effect.long_luck_potion": "Strzała szczęścia",
+  "item.minecraft.splash_potion.effect.luck_2": "Miotana mikstura szczęścia II",
+  "item.minecraft.lingering_potion.effect.luck_2": "Trwała mikstura szczęścia II",
+  "item.minecraft.tipped_arrow.effect.luck_2": "Strzała szczęścia II"
+}
