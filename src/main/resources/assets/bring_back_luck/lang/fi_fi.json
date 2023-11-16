@@ -1,0 +1,15 @@
+{
+  "item.bring_back_luck.lucky_clover": "Onnenapila",
+  "item.minecraft.potion.effect.unlucky_potion": "Epäonnen taikajuoma",
+  "item.minecraft.splash_potion.effect.unlucky_potion": "Roiskahtava epäonnen taikajuoma",
+  "item.minecraft.lingering_potion.effect.unlucky_potion": "Viipyvä epäonnen taikajuoma",
+  "item.minecraft.tipped_arrow.effect.unlucky_potion": "Epäonnen nuoli",
+  "item.minecraft.potion.effect.long_luck_potion": "Onnen taikajuoma",
+  "item.minecraft.potion.effect.luck_2": "Onnen taikajuoma II",
+  "item.minecraft.splash_potion.effect.long_luck_potion": "Roiskahtava onnen taikajuoma",
+  "item.minecraft.lingering_potion.effect.long_luck_potion": "Viipyvä onnen taikajuoma",
+  "item.minecraft.tipped_arrow.effect.long_luck_potion": "Onnen nuoli",
+  "item.minecraft.splash_potion.effect.luck_2": "Roiskahtava onnen taikajuoma II",
+  "item.minecraft.lingering_potion.effect.luck_2": "Viipyvä onnen taikajuoma II",
+  "item.minecraft.tipped_arrow.effect.luck_2": "Onnen nuoli II"
+}
