@@ -1,0 +1,15 @@
+{
+  "item.bring_back_luck.lucky_clover": "Счастливый клевер",
+  "item.minecraft.potion.effect.unlucky_potion": "Зелье неудачи",
+  "item.minecraft.splash_potion.effect.unlucky_potion": "Взрывное зелье неудачи",
+  "item.minecraft.lingering_potion.effect.unlucky_potion": "Туманное зелье неудачи",
+  "item.minecraft.tipped_arrow.effect.unlucky_potion": "Стрела неудачи",
+  "item.minecraft.potion.effect.long_luck_potion": "Зелье удачи",
+  "item.minecraft.potion.effect.luck_2": "Зелье удачи II",
+  "item.minecraft.splash_potion.effect.long_luck_potion": "Взрывное зелье удачи",
+  "item.minecraft.lingering_potion.effect.long_luck_potion": "Туманное зелье удачи",
+  "item.minecraft.tipped_arrow.effect.long_luck_potion": "Стрела удачи",
+  "item.minecraft.splash_potion.effect.luck_2": "Взрывное зелье удачи II",
+  "item.minecraft.lingering_potion.effect.luck_2": "Туманное зелье удачи II",
+  "item.minecraft.tipped_arrow.effect.luck_2": "Стрела удачи II"
+}
