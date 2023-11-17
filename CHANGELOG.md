@@ -1,4 +1,8 @@
+Adds fStats (bStats but for Fabric)
+
 ### Issues Closed
-> [#1](https://github.com/BoyPika/bring-back-luck/issues/1) - Add a Clover into Generation
+> None this update
 ### Pull Requests Closed
-> [#3](https://github.com/BoyPika/bring-back-luck/pull/3) - Translate to French from Desoroxxx
+> [#4](https://github.com/BoyPika/bring-back-luck/pull/4) - Translate to Polish from ImpSteve on Crowdin </br>
+> [#5](https://github.com/BoyPika/bring-back-luck/pull/5) - Remove unnecessary language files
+> [#6](https://github.com/BoyPika/bring-back-luck/pull/6)

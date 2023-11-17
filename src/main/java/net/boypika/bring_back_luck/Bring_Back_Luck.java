@@ -5,6 +5,7 @@ import net.boypika.bring_back_luck.item.ModItems;
 import net.boypika.bring_back_luck.potion.ModPotions;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -23,5 +24,8 @@ public class Bring_Back_Luck implements ModInitializer {
         ModPotions.registerPotionRecipes();
         ModItems.addItemsToItemGroup();
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.VEGETAL_DECORATION, CLOVERFEATURE);
+        if (FabricLoader.getInstance().isModLoaded("fstats-api")) {
+            Bring_Back_Luck.LOGGER.warn("FStats is loaded. This can be disabled in the config for FStats.");
+        }
     }
 }
